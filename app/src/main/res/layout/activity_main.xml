@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AngelinaThai"
+    android:padding="8dp"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/gradient_list"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cookieCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/serif"
+                android:paddingRight="50dp"
+                android:text="0 Fireballs"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/serif"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:text="SHOP:" />
+
+            <Button
+                android:id="@+id/clicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/serif"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:text="Clicks: $10" />
+
+            <Button
+                android:id="@+id/automaticMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/serif"
+                android:textSize="16dp"
+                android:text="Passive Income: $10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/calcifer"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/calcifer" />
+
+    <TextView
+        android:id="@+id/purchases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/serif"
+        android:layout_below="@+id/calcifer"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="PURCHASED ITEMS: " />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/purchases" />
+
+
+</RelativeLayout>
